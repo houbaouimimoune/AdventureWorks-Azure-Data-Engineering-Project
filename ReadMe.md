@@ -1,0 +1,1 @@
+This project builds a complete data pipeline using Azure for extracting, transforming, storing, and visualizing AdventureWorks data. Raw data is extracted, stored in Azure Data Lake, cleaned, and transformed with PySpark and Azure Synapse Analytics. Data is loaded into a data warehouse and visualized with Power BI.
