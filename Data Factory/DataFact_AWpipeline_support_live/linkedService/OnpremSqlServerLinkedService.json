@@ -1,0 +1,28 @@
+{
+    "name": "OnpremSqlServerLinkedService",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "SqlServer",
+        "typeProperties": {
+            "server": "DESKTOP-IOAHSP2\\SQLEXPRESS01",
+            "database": "AdventureWorks2019",
+            "encrypt": "mandatory",
+            "trustServerCertificate": true,
+            "authenticationType": "SQL",
+            "userName": "azureDF",
+            "password": {
+                "type": "AzureKeyVaultSecret",
+                "store": {
+                    "referenceName": "AzureKeyVaultLinkedService",
+                    "type": "LinkedServiceReference"
+                },
+                "secretName": "OnPremPassword"
+            }
+        },
+        "connectVia": {
+            "referenceName": "OnPremIntegrationRunTime",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}

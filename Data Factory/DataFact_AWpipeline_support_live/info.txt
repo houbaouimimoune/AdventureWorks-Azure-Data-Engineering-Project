@@ -1,0 +1,6 @@
+selected resource name:		AWpipeline
+selected resource type:		pipeline
+factory name:			AW-DataFact
+factory location:		southafricanorth
+subscription id:		872996ac-606a-495e-b146-99cc0dbcd828
+time of download (UTC):		Sun, 22 Dec 2024 22:34:59 GMT
